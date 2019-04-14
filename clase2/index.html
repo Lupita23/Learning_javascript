@@ -53,16 +53,101 @@
                 console.log('Si es par y menor a 30')
             }else if (product % 2 === 0 && product >= 30 && product < 50 ){
 
-                console.log(' si es par a 30 y menos')
+                console.log('si es par a 30 y menos')
             }else{
                 console.log('Ninguno')
 
             }
         </script>
         <script>
-            var numero = 30;
-            
+            //IMPRIMIR LOS MULTIPLOS DE 3 MIENTRAS QUE EL NUMERO SEA MENOR A 100
+
+            var number = 0; 
+
+             while (number < 100){//numero es menor que 100
+                 if(number % 3 === 0){// 0 modulo 3 es y 0 es multiplo de 3 se imprime
+                     console.log("El numero multiplo de 3 es",number)
+                 }
+                 number++// incremento
+                 
+
+             }
         
+        </script>
+        <script>
+            //ciclo for
+            for(var i = 0; i < 100; i++){
+                console.log(i);
+            }
+        </script>
+        <script>
+            //IMPRIMIR 100,99,98 HASTA EL 1
+            for(var i = 100; i > 0; i--){
+                console.log(i);
+            }
+        </script>
+        <script>
+            //METODOS DE STRING
+            //total de letras en una palabra
+            var greeting = 'hello word'
+            greeting.length;//entrega l aprimera letra de una palabra
+
+            greeting.indexOf('w'); //recibe la posicion de la primera letra que recibe como argumento
+            greeting.lastIndexOf('i');//entrega la ultima posicion de una letra dada
+
+            greeting.slice(1);
+            greeting.slice(0,4)//corta palabras de posicion a a posicion b
+            greeting.substr(0,4);//Apartir de que posicion debe cortar y cuantas avanzas
+            
+            var curp = CDFS961114;
+            greeting. replace('96','88')// Remplaza
+
+
+            greeting.toUpperCase()// deveulve una palabra a Mayusculas
+            greeting.toLowerCase()//devuelve una palbra a minusculas 
+
+            greeting.charAt(4);//devuelve una letra de la posicion que se le asigne
+
+            greeting.split('');//
+
+           var ex = 'a,e,i,o,u';
+            ex.split(',');//separador
+        </script>
+        <script>
+        //imprimir el numero de vocal  a repetidas en las sig palabras
+        //hooolaa
+        //array
+        //amarilla
+        //palindromo
+
+        var palabra_1 = 'hoooAAla';
+        var palabra_2 = 'array';
+        var palabra_3 = 'amarilla';
+        var palabra_4 = 'palindromo';
+        var numeroA = 0;
+
+        for (var i = 0; i < palabra_1.length; i++){
+           
+            if(palabra_1.toLowerCase()[i] === 'a' ){
+                numeroA++;
+            }
+
+        }
+        console.log(numeroA);
+
+        //hacerlo sin metodos
+        for(var i = 'a'; i < palabra_1; i++){
+            
+           
+
+        }
+
+
+
+
+
+
+
         </script>
         
     </body>
